@@ -1,0 +1,243 @@
+
+body{
+
+    /*background-color: #c17ff3;*/
+    background-image: linear-gradient(to right,#c17ff3, #675ee0);
+
+ 
+}
+.main{
+    display: flex;
+    margin: 70px;
+    position: relative;
+    height: 80vh;
+    width: 90%;
+    /*border: 1px solid black;*/
+
+
+}
+.left{
+    height: 99%;
+    width: 49%;
+    float: left;
+    /*border: 1px solid black;*/
+ 
+    
+
+}
+#imgside{
+    z-index: -1;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+   
+}
+
+.right{
+    height: 99%;
+    width: 50%;
+    float: right;
+    /*border: 1px solid black;*/
+    background-color: white;
+    
+}
+#mainheading{
+    margin-top: 70px;
+    font-weight: 100;
+    font-size: 24px;
+    padding-left: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#disc{
+    color: rgb(66, 61, 61);
+    font-size: 14px;
+    padding-left: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+#disc2{
+    padding-top: 24px;
+    color: rgb(66, 61, 61);
+    font-size: 11px;
+    padding-left: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #339BEB;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+form{
+    position: relative;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 24px;
+    width: auto;
+    height: inherit;
+
+}
+label{
+   
+    color: rgb(66, 61, 61);
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+input{
+    margin-top: 10px;
+}
+
+input[type=text]{
+    height: 30px;
+    width: 200px;
+    border: 0.2px solid rgb(148, 148, 148);
+    border-radius: 5%;
+    padding-left: 10px;
+  
+}
+input[type=password]{
+    height: 30px;
+    width: 200px;
+    border: 0.2px solid rgb(148, 148, 148);
+    border-radius: 5%;
+    padding-left: 10px;
+  
+}
+
+#LastName{
+padding-left: 150px;
+
+}
+#lnamein{
+    margin-left: 13px;
+}
+#Phone{
+    margin-top: 15px;
+    position: absolute;
+    
+}
+#Email{
+    margin-top: 15px;
+    margin-left:  230px;
+    position: absolute;
+ 
+}
+#phoneinp{
+    position: absolute;
+    margin-top: 30px;
+
+}
+#emailin{
+    position: absolute;
+    margin-left: 230px;
+    margin-top: 30px;
+}
+
+#pass{
+    color: rgb(66, 61, 61);
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 90px;
+    position: absolute;
+}
+#Cpass{
+    color: rgb(66, 61, 61);
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 90px;
+    margin-left:  230px;
+    position: absolute;
+
+}
+#passin{
+    position: absolute;
+    margin-top: 100px;
+
+}
+
+#passinC{
+    position: absolute;
+    margin-left: 230px;
+    margin-top: 100px;
+}
+
+.cb{
+    margin-top: 160px;
+}
+
+.cont{
+    margin-top: 18px;
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+
+}
+.cont input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+}
+.checkmark{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+
+
+}
+
+.cont:hover input ~.checkmark{
+    background-color: #ccc;
+
+}
+.cont input:checked ~.checkmark{
+    background-color: #2196f3;
+
+}
+.checkmark::after{
+    counter-reset: "";
+    position: absolute;
+    display: none;
+}
+.cont input:checked ~.checkmark::after{
+    display: block;
+}
+.cont .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+button{
+    background-color: #2196f3;
+    color: white;
+    border: 0;
+    height: 34px;
+    width: 80px;
+    font-size: 13px;
+    font-weight: 150;
+    margin-top: 20px;
+    border-radius: 5%;
+
+}
+
